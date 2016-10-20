@@ -56,5 +56,8 @@ function Multiplicacao(){
 }
 
 function Subitracao(){
-    //
+    if (valor.value !== '') {
+	historico.innerHTML += valor.value + ' - </br>';
+	valor.value = '';
+    }
 }
