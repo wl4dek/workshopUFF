@@ -48,12 +48,7 @@ function Soma(){
 }
 
 function Divisao(){
-    if (valor.value !== '') {
-	if (valor.value === 0) {
-        	historico.innerHTML += valor.value + ' / </br>';
-        	valor.value = '';
-	}
-    }
+    //
 }
 
 function Multiplicacao(){
