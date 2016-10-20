@@ -39,3 +39,22 @@ function igual(){
         limpar.style.display = 'block';
     }
 }
+
+function Soma(){
+    if (valor.value !== '') {
+        historico.innerHTML += valor.value + ' + </br>';
+        valor.value = '';
+    }
+}
+
+function Divisao(){
+    //
+}
+
+function Multiplicacao(){
+    //
+}
+
+function Subitracao(){
+    //
+}
