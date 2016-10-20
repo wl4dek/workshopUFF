@@ -1,0 +1,17 @@
+.btn-number{
+    border: 1px solid #bcbcbc;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+.padding-5px{
+    padding: 5px;
+}
+input{
+    text-align: right;
+}
+.historico{
+    text-align: right;
+}

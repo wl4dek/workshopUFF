@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="row" style="margin-top: 30px">
+            <div class="col-md-offset-3 col-md-6">
+                <button id="limpar" class="btn btn-primary" onclick="LimparHistorico()" type="button" style="display: none;">
+                    Limpar
+                </button>
+
+                <div id="historico" class="historico">
+                </div>
+
+                <div class="row">
+                    <div class="col-md-10">
+                        <input type="text" class="form-control" id="valor">
+                    </div>
+                    <div class="col-md-2">
+                        <button class="btn btn-block btn-number" onclick="limparValor()" type="button"> C </button>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-3 padding-5px">
+                        <button class="btn btn-block btn-number" onclick="setNumber(1)" type="button">1</button>
+                    </div>
+                    <div class="col-md-3 padding-5px">
+                        <button class="btn btn-block btn-number" onclick="setNumber(2)" type="button">2</button>
+                    </div>
+                    <div class="col-md-3 padding-5px">
+                        <button class="btn btn-block btn-number" onclick="setNumber(3)" type="button">3</button>
+                    </div>
+                    <div class="col-md-3 padding-5px">
+                        <button class="btn btn-block btn-number" onclick="Subitracao()" type="button"> - </button>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-3 padding-5px">
+                        <button class="btn btn-block btn-number" onclick="setNumber(4)" type="button">4</button>
+                    </div>
+                    <div class="col-md-3 padding-5px">
+                        <button class="btn btn-block btn-number" onclick="setNumber(5)" type="button">5</button>
+                    </div>
+                    <div class="col-md-3 padding-5px">
+                        <button class="btn btn-block btn-number" onclick="setNumber(6)" type="button">6</button>
+                    </div>
+                    <div class="col-md-3 padding-5px">
+                        <button class="btn btn-block btn-number" onclick="Soma()" type="button"> + </button>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-3 padding-5px">
+                        <button class="btn btn-block btn-number" onclick="setNumber(7)" type="button">7</button>
+                    </div>
+                    <div class="col-md-3 padding-5px">
+                        <button class="btn btn-block btn-number" onclick="setNumber(8)" type="button">8</button>
+                    </div>
+                    <div class="col-md-3 padding-5px">
+                        <button class="btn btn-block btn-number" onclick="setNumber(9)" type="button">9</button>
+                    </div>
+                    <div class="col-md-3 padding-5px">
+                        <button class="btn btn-block btn-number" onclick="Multiplicacao()" type="button"> x </button>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-3 padding-5px">
+                        <button class="btn btn-block btn-number" onclick="setVirgula()" type="button">,</button>
+                    </div>
+                    <div class="col-md-3 padding-5px">
+                        <button class="btn btn-block btn-number" onclick="setNumber(0)" type="button">0</button>
+                    </div>
+                    <div class="col-md-3 padding-5px">
+                        <button class="btn btn-block btn-number" onclick="igual()" type="button">=</button>
+                    </div>
+                    <div class="col-md-3 padding-5px">
+                        <button class="btn btn-block btn-number" onclick="Divisao()" type="button"> / </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/script.js" type="text/javascript" charset="utf-8" async defer></script>
+</body>
+</html>
