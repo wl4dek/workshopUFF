@@ -52,7 +52,10 @@ function Divisao(){
 }
 
 function Multiplicacao(){
-    //
+    if (valor.value !== '') {
+        historico.innerHTML += valor.value + ' * </br>';
+        valor.value = '';
+    }
 }
 
 function Subitracao(){
