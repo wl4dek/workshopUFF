@@ -48,13 +48,22 @@ function Soma(){
 }
 
 function Divisao(){
-    //
+    if (valor.value !== '') {
+        historico.innerHTML += valor.value + ' / </br>';
+        valor.value = '';
+    }
 }
 
 function Multiplicacao(){
-    //
+    if (valor.value !== '') {
+        historico.innerHTML += valor.value + ' * </br>';
+        valor.value = '';
+    }
 }
 
 function Subitracao(){
-    //
+    if (valor.value !== '') {
+        historico.innerHTML += valor.value + ' - </br>';
+        valor.value = '';
+    }
 }
